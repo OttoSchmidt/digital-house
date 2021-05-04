@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/*
+Palheta de cor:
+#3273c5 - primaria (h2)
+    #2960A3 - derivada (borda dos itens)
+
+rgba(42,42,42,0.75)
+
+#999
+
+black
+white
+*/
+
+html * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-image: url("img/fundo.jpeg");
+    /*background-color: black;*/
+    /*background-repeat: no-repeat;*/
+    background-size: auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 27px;
+    color: white
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color:black;
+    border: 3px solid white;
+    border-top: 0px solid white;
+    margin: 0px 60px;
+}
+
+    header h2 {
+        color: #999;
+        font-weight: 700;
+    }
+
+
+    header img {
+        width: 15%;
+        background-color: inherit;
+        display: inline-block;
+        margin: auto;
+    }
+
+    #home {
+        width: 30px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin: 5px;
+    }
+
+main {
+    margin: 40px 0px;
+    padding: 0px 75px 25px 75px;
+    /*background-color: rgba(0, 0, 0, 0.5)*/
+}
+
+    h1 {
+        margin-bottom: 5px;
+        margin-top: 50px;
+    }
+
+    h2 {
+        margin: 20px 15px;
+        color: #3273c5;
+    }
+
+    h3 {
+        font-size:larger;
+        font-weight:300;
+        margin: 10px 50px 10px 50px;
+        display:block;
+    }
+
+    p {
+        margin: 15px 70px;
+        font-size: larger;
+    }
+
+    a {
+        color: white;
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    figure {
+        /*background-color: rgba(0, 0, 0, 0.25);*/
+        margin: 15px 75px;
+        border: 3px solid #2960A3;
+        background-color: rgba(42,42,42,0.75);
+    }
+
+        figure img {
+            width: 300px;
+        }
+    
+    img {
+        width:220px;
+        display: inline-block;
+        background-color: #999;
+        padding: 2px;
+        margin: 10px 120px;
+    }
