@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+
+html * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-image: url("../img/fundo.jpeg");
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+    line-height: 27px;
+    color: white;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 4fr 11fr 4fr;
+}
+
+header {
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+    background-color: black;
+    border: 3px solid white;
+    border-top: 0px solid white;
+    grid-column: 1/5;
+}
+
+    header h2 {
+        font-family: 'Kanit', sans-serif;
+        color: #999;
+        font-weight: 700;
+        margin: 20px 15px;
+    }
+
+
+    header img {
+        width: 15%;
+        background-color: inherit;
+        display: inline-block;
+        margin: auto;
+    }
+
+main {
+    margin-top: 40px;
+    grid-column: 2/3;
+}
+
+    figure {
+        grid-column: 2/3;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border: 3px solid #edec51;
+        background-color: rgba(42,42,42,0.75);
+        padding-top: 10px;
+    }
+
+    h2 {
+        font-family: 'Kanit', sans-serif;
+        margin: 20px 15px;
+        /*color: #3273c5;*/
+        color: #D6C73E;
+        grid-column: span 2;
+    }
+
+    p {
+        margin: 10px 10px 10px 30px;
+        font-size: larger;
+        grid-column: 2/3;
+    }
+
+asside {
+    margin-top: 40px;
+    justify-self: center;
+}
+
+    a {
+        color: #F7D448; 
+        font-style: normal;
+        text-decoration: none;
+        grid-column: 2/4;
+    }
+
+        a:hover {
+            text-decoration:underline;
+        }
+
+
+    img {
+        width: 220px;
+        background-color: #999;
+        padding: 2px;
+        margin: 10px;
+        align-content: center;
+    }
+
+    .fonte {
+        text-align: center;
+        margin: 0px;
+    }
+    
+nav {
+    grid-column: 1;
+    grid-row: 2/3;
+    text-align:left;
+    height: 100%;
+}
+    nav div {
+        height:100vh;
+        overflow-y: auto;
+        position: sticky;
+        top: 0px;
+        background-color: black;
+        border: 3px solid white;
+    }
+
+    nav li {
+        font-size:medium;
+        color: white;
+    }
+
+    nav a:hover li {
+        text-decoration: white underline;
+    }
+
+    nav ul {
+        margin: 20px 20px 20px 40px;
+    }
+
+    nav h1 {
+        margin: 10px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    nav h2 {
+        margin: 20px 15px;
+        font-family: 'Kanit', sans-serif;
+        color: #D6C73E;
+    }
+
+    nav h1 {
+        font-family: 'Kanit', sans-serif;
+    }
