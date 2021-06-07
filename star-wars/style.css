@@ -231,6 +231,7 @@ nav {
     background-repeat:no-repeat;
     background-size: cover;
     border: 5px solid #1353A8;193*/
+    border-radius: 10px;
     background-color: rgb(62, 62, 62);
   }
 
