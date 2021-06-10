@@ -168,8 +168,9 @@ main {
         #rankingmusica img {
             grid-column: 2/3;
             grid-row: 1/2;
-            margin: 10px 80px 0px 80px;
-            width: 250px;
+            width: 200px;
+            display:inline;
+            margin:auto;
         }
     
         #rankingmusica div {
