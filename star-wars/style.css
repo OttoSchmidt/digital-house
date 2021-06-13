@@ -114,6 +114,7 @@ main {
             /*border: 3px solid #2960A3;*/
             border: 3px solid #176ddb;
             background-color: rgba(42,42,42,0.75);
+            transition: 100ms;
         }
         
             .textcard {
