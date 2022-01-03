@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/carrinho.css">
+	<link rel="shortcut icon" href="icons/icone.png">
+	<title>Loja de natal</title>
+	<script src="js/carrinho.js">
+	</script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1>Loja de natal</h1></a>
+		<div class="secaoCarrinho">
+        	<a class="iconeCarrinho" class="iconeNav" href="carrinho.html">
+				<p class="descricaoCarrinho">Carrinho</p>
+				<img src="icons/cart.png" alt="Carrinho">
+				<p class="quantidade">0</p>
+			</a>
+			<img class="presenteCarrinho" src="../img/presente.png">
+		</div>
+    </header>
+    <main>
+      <div id="compras">
+        <p id="nenhumProduto">Sem produtos no carrinho!</p>
+      </div>
+      
+      <div id="painelFinalizacao">
+        <h2>Confirme sua compra</h2>
+        <div id="prazo">
+         <h3>Método de entrega:</h3>
+         <div class="entrega">
+           <h4>Trenó do Noel - 25 de dezembro</h3>
+         </div>
+		</div>
+		<h3 id="total"></h3>
+		<!--
+        <div id="botao">
+          <button>Continuar</button>
+        </div>
+		-->
+      </div>
+
+      <div id="produtos">
+        <div class="prod" id="prod1">
+          <img class="imagemProduto" src="img/produtos/bengala.png">
+          <p class="titulo">Bengala Doce 5x</p>
+          <p class="preço">5</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod1)">
+        </div>
+
+        <div class="prod" id="prod2">
+          <img class="imagemProduto" src="img/produtos/papai-noel.png">
+          <p class="titulo">Papai Noel Miniatura</p>
+          <p class="preço">75</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod2)">
+        </div>
+
+        <div class="prod" id="prod3">
+          <img class="imagemProduto" src="img/produtos/gorro.png">
+          <p class="titulo">Gorro de natal</p>
+          <p class="preço">10</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod3)">
+        </div>
+
+        <div class="prod" id="prod4">
+          <img class="imagemProduto" src="img/produtos/caneca.png">
+          <p class="titulo">Caneca temática</p>
+          <p class="preço">15</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod4)">
+        </div>
+
+        <div class="prod" id="prod5">
+          <img class="imagemProduto" src="img/produtos/biscoitinho.png">
+          <p class="titulo">Biscoitinho</p>
+          <p class="preço">5</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod5)">
+        </div>
+
+        <div class="prod" id="prod6">
+          <img class="imagemProduto" src="img/produtos/ursinho.png">
+          <p class="titulo">Ursinho de pelúcia</p>
+          <p class="preço">35</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod6)">
+        </div>
+
+        <div class="prod" id="prod7">
+          <img class="imagemProduto" src="img/produtos/estrela.png">
+          <p class="titulo">Estrela</p>
+          <p class="preço">25</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod7)">
+        </div>
+
+        <div class="prod" id="prod8">
+          <img class="imagemProduto" src="img/produtos/guirlanda.png">
+          <p class="titulo">Guirlanda</p>
+          <p class="preço">35</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod8)">
+        </div>
+
+        <div class="prod" id="prod9">
+          <img class="imagemProduto" src="img/produtos/bolas.png">
+          <p class="titulo">Bolas</p>
+          <p class="preço">40</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod9)">
+        </div>
+
+        <div class="prod" id="prod10">
+          <img class="imagemProduto" src="img/produtos/arvore-de-natal.png">
+          <p class="titulo">Árvore de Natal</p>
+          <p class="preço">200</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod10)">
+        </div>
+
+        <div class="prod" id="prod11">
+          <img class="imagemProduto" src="img/produtos/papel.png">
+          <p class="titulo">Papéis de presente</p>
+          <p class="preço">10</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod11)">
+        </div>
+
+        <div class="prod" id="prod12">
+          <img class="imagemProduto" src="img/produtos/presepio.png">
+          <p class="titulo">Presépio</p>
+          <p class="preço">75</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod12)">
+        </div>
+
+        <div class="prod" id="prod13">
+          <img class="imagemProduto" src="img/produtos/cartao1.png">
+          <p class="titulo">Cartão 1</p>
+          <p class="preço">5</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod13)">
+        </div>
+
+        <div class="prod" id="prod14">
+          <img class="imagemProduto" src="img/produtos/cartao2.png">
+          <p class="titulo">Cartão 2</p>
+          <p class="preço">5</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod14)">
+        </div>
+
+        <div class="prod" id="prod15">
+          <img class="imagemProduto" src="img/produtos/cartao3.png">
+          <p class="titulo">Cartão 3</p>
+          <p class="preço">5</p>
+		  <img src="../icons/trash.png" class="lixeira" onclick="excluir(prod15)">
+        </div>
+      </produtos>
+    </main>
+</body>
+</html>
