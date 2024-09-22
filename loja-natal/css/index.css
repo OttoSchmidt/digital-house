@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: Christmas-Bell;
+    src: url(fonts/christmasBell.otf);
+}
+
+:root {
+    --cor-principal: rgb(212, 53, 53);
+    --cor-secundaria: rgb(118, 219, 115);
+    --cor-branco: #F2F4ED;
+	--cor-fundo: #F2F4ED;
+    --largura: 100%;
+}
+
+html * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+	font-family: Poppins;
+    background-color: var(--cor-fundo);
+}
+
+header {
+    z-index: 1;
+    color: var(--cor-fundo);
+    background-color: var(--cor-principal);
+    width: var(--largura);   
+    padding: 1.5rem 0px;
+}
+
+header a {
+    display: flex;
+    margin: 0px auto;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--cor-fundo);
+}
+
+h1 {
+    display: flex;
+    margin: 0px auto;
+    font-family: Christmas-Bell;
+    font-size: 4rem;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.secaoCarrinho {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+}
+
+.iconeCarrinho {
+	position: relative;
+	padding: .5rem;
+	transition: 100ms;
+}
+
+.iconeCarrinho:hover {
+	border-radius: 50%;
+	background-color: rgb(187, 40, 40);
+}
+
+.presenteCarrinho {
+	z-index: 0;
+	position: relative;
+	bottom: 6.5rem;
+	left: 1.5rem;
+	width: 15px;
+}
+
+.secaoCarrinho:hover .presenteCarrinho {
+	transition: bottom 200ms cubic-bezier(0.77, 0.18, 0.78, 0.61), transform 200ms;
+	position: relative;
+    bottom: 3rem;
+	transform: rotate(765deg);
+}
+
+.descricaoCarrinho {
+	display: none;
+	position: absolute;
+	top: 3.5rem;
+	right: -.5rem;
+	background-color: var(--cor-principal);
+	border-radius: 8px;
+	border: var(--cor-fundo) 1px solid;
+	width: fit-content;
+	padding: 5px;
+	font-size: .75rem;
+}
+
+.iconeCarrinho:hover > .descricaoCarrinho {
+	position: absolute;
+	display: block;
+}
+
+.iconeCarrinho img {
+	z-index: 1;
+	filter: invert(1);
+	width: 40px;
+}
+
+.quantidade {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	position: absolute;
+	top: 2rem;
+	right: .1rem;
+	padding: .4rem;
+	height: .5rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: var(--cor-secundaria);
+	color: var(--cor-principal);
+}
+
+main {
+  align-items: center;
+}
+
+h2 {
+  font-family: Christmas-Bell;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.produto {
+  margin: 10rem auto 0px auto !important;
+  display: flex;
+  width: 20rem;
+  height: 25rem;
+  justify-content: center;
+  align-items: center;
+  transition: 100ms;
+}
+
+.produto:hover {
+	transform: scale(1.05);
+}
+
+.prod1, .prod3 {
+  background-color: var(--cor-principal);
+}
+
+.prod2 {
+  background-color: var(--cor-secundaria);
+}
+
+.vermelho {
+  background-color: var(--cor-principal);
+}
+
+.verde {
+  background-color: var(--cor-secundaria);
+}
+
+.listraVertical {
+  z-index: 2;
+  position: absolute;
+  height: 25rem;
+  width: 5rem;
+}
+
+.listraHorizontal {
+  z-index: 2;
+  position: absolute;
+  width: 20rem;
+  height: 5rem;
+}
+
+.conteudo {
+  color: black;
+  position: relative;
+  z-index: 10;
+  background-color: var(--cor-fundo);
+  width: 16rem;
+  height: 21rem;
+  padding: 1rem;
+  text-decoration: none;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: 6fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.conteudo h4 {
+	margin-top: 4rem;
+}
+
+.conteudo p::before {
+	content: "🍪";
+}
+
+.conteudo img {
+	grid-row: 1;
+	width: 10rem;
+	overflow: hidden;
+}
+
+#secaoNormal .produto {
+  margin: 0px auto !important;
+}
+
+#faltamXDias {
+  z-index: 0;
+  background-color: var(--cor-secundaria);
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  text-align:center;
+  overflow: hidden;
+}
+
+#faltamXDias h2 {
+  position: relative;
+  top: 5rem;
+  color: var(--cor-principal);
+  height: fit-content;
+}
+
+#bisc {
+  position: relative;
+  bottom: 150px;
+  grid-column: 1;
+  width: 30rem;
+  transition: 100ms;
+}
+
+@media (max-width: 1000px) {
+	#secaoNormal {
+		grid-template-columns: 1fr 1fr !important;
+	}
+}
+
+@media (max-width: 670px) {
+	#secaoNormal {
+		grid-template-columns: 1fr !important;
+	}
+
+	#faltamXDias {
+		display: block !important;
+	}
+
+	#faltamXDias img {
+		display: none;
+	}
+}
+
+#secaoNormal {
+  padding: 5rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 5rem;
+}
+
+#secaoNoite {
+  position: relative;
+  text-align: center;
+  color: var(--cor-fundo);
+  width: var(--largura);
+  height: max-content;
+  background-color: rgb(39, 33, 78);
+}
+
+#secaoNoite * {
+  z-index: 1;
+}
+
+#fundoNoite {
+  position: absolute;
+  left: 0px;
+  z-index:0;
+  width: 100%;
+}
+
+#secaoNoite h2 {
+  position: relative;
+  top: 5rem;
+  z-index: 2;
+}
+
+#treno {
+  z-index: 10px;
+  position: absolute;
+  width: 20vw;
+  left: -65vw;
+  top: 8vw;
+  transition: left cubic-bezier(0.07, 0.31, 0.15, 0.85) 500ms;
+}
+
+#rolagem {
+	position: relative;
+	top: 5rem;
+	margin: 10rem 5rem;
+}
+
+#rolagem1, #rolagem2, #rolagem3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#rolagem2, #rolagem3 {
+  display: none;
+}
+
+#esquerda, #direita {
+  	filter: invert(1);
+  	position: absolute;
+  	bottom: 17rem;
+	border-radius: 0%;
+	transition: 100ms;
+}
+
+#esquerda:hover, #direita:hover {
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: rgb(178, 191, 77);
+}
+
+#esquerda {
+  left: 1vw;
+  transform: rotate(90deg);
+  display: none;
+}
+
+#direita {
+  right: 1vw;
+  transform: rotate(-90deg);
+}
+
+#selecionado {
+  position: relative;
+  margin: 0px auto;
+  bottom: 3rem;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+}
+
+.circ {
+  border-radius: 50%;
+  width: 20px;
+  aspect-ratio: 1;
+  background-color: var(--cor-fundo);
+}
+
+.circSelecionado {
+  background-color: var(--cor-principal);
+}
